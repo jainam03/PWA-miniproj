@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Poppins',sans-serif;
 }
 
 body {
@@ -29,7 +31,7 @@ body>h1 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
-    letter-spacing: 2px;
+    letter-spacing: 3px;
 
     transition: 0.3s;
 }
@@ -51,7 +53,7 @@ form {
     gap: 25px;
 
     min-width: 500px;
-    max-height: 350px;
+    max-height: 400px;
 
     background: #363636;
     border: none;
@@ -70,6 +72,7 @@ input {
     min-width: 400px;
 
     font-weight: 400;
+    letter-spacing: 3px;
 
     background: rgba(255, 255, 255, 0.3);
     border: none;
@@ -79,7 +82,6 @@ input {
     color: black;
     font-size: 20px;
     font-weight: 600;
-    letter-spacing: 2px;
 }
 
 input::placeholder {
@@ -98,7 +100,8 @@ input::placeholder {
     outline: none;
 
     font-size: 20px;
-    font-weight: 545;
+    font-weight: 700;
+    letter-spacing: 3px;
 
     /* color: rgba(255, 255, 255, 0.9); */
     color: black;
@@ -115,7 +118,20 @@ input::placeholder {
     background: linear-gradient(to left, #f64f59, #c471ed, #12c2e9);
 }
 
+#btn:active {
+    transform: translateY(5px);
+}
+
 body>h2 {
     margin: 20px 0;
     color: #ddd;
+    letter-spacing: 3px;
+}
+
+body>h2>a {
+    color: wheat;
+}
+
+body>h2>a:hover {
+    text-decoration: none;
 }
