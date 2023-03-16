@@ -41,33 +41,51 @@
             justify-content: flex-end;
 
             margin-top: 10px;
-            padding: 0 15px;
+            padding: 0 0px;
 
             max-width: 100%;
             min-height: 5vh;
 
             backdrop-filter: blur(70px);
             background: -webkit-linear-gradient(to top, #f64f59, #c471ed, #12c2e9);
-    
+
             background: linear-gradient(to top, #f64f59, #c471ed, #12c2e9);
 
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            
-            box-shadow: 0 10px 0 rgba(0,0,0,0.2);
+
+            box-shadow: 0 10px 0 rgba(0, 0, 0, 0.2);
         }
 
         .nav-div {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+            flex-basis: 25%;
+
+            padding-bottom: 20px;
 
             font-size: 25px;
         }
 
         #signup {
             margin: 5px 25px;
-        }        
+            background: rgba(255,255,255,0.2);
+            padding: 0px 10px;
+
+            font-weight: bolder;
+
+            border-radius: 10px;
+        }
+        #signin {
+            /* margin: 5px 25px; */
+            background: rgba(255,255,255,0.2);
+            padding: 0px 10px;
+
+            font-weight: bolder;
+
+            border-radius: 10px;
+        }
 
         header {
             padding: 2rem 1rem;
@@ -81,7 +99,7 @@
             font-weight: 300;
             /* color: var(--grey); */
             background: -webkit-linear-gradient(to top, #f64f59, #c471ed, #12c2e9);
-    
+
             background: linear-gradient(to top, #f64f59, #c471ed, #12c2e9);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -118,7 +136,7 @@
         }
 
         #new-task-submit {
-            color:#12c2e9;
+            color: #12c2e9;
             font-size: 1.25rem;
             font-weight: 700;
 
@@ -149,11 +167,11 @@
         }
 
         .tasks {
-            margin-top:10px auto ;
+            margin-top: 10px auto;
         }
 
         .task-list {
-            padding:  1rem 2.5rem;           
+            padding: 1rem 2.5rem;
         }
 
         .task-list h2 {
@@ -226,16 +244,29 @@
         .task .actions .delete {
             color: #12c2e9;
         }
+
+        body>h3 {
+            margin: 0 0 40px 35px;
+            text-align: left;
+        }
+
+        body>h3>a {
+            color: wheat;
+            text-decoration: none;
+        }
+        body>h3>a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 
 <body>
-    <nav id="nav" >
+    <nav id="nav">
         <div class="nav-div">
             <span>
-                <a href="/src/signup.html" id="signup">Sign up</a> 
-                <a href="/src/signin.html" id="signin">Sign in</a> 
-                
+                <a href="/src/signup.html" id="signup">Sign up</a>
+                <a href="/src/signin.html" id="signin">Sign in</a>
+
             </span>
         </div>
     </nav>
@@ -268,8 +299,12 @@
             </div>
         </section>
     </main>
+
+    <h3>
+        <a href="/src/signin.html">Sign in</a> to save your tasks
+    </h3>
     <script src="/src/index.js"></script>
-    <script type="text/javascript" ></script>
+    <script type="text/javascript"></script>
     <script type="text/javascript">
         window.addEventListener('load', () => {
             const form = document.querySelector("#new-task-form");
