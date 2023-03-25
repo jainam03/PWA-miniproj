@@ -92,6 +92,13 @@ input::placeholder {
     color: #f1f1f1;
 }
 
+.submit-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
 input[type="submit"] {
     cursor: pointer;
     display: flex;
