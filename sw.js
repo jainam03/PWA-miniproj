@@ -2,7 +2,7 @@ self.addEventListener("install",e => {
     // console.log("Installed successfully");
     e.waitUntil(
         caches.open("static").then(cache => {
-            return cache.addAll(["./","./src/signup.css","./src/signup.html","./images/logo192.png","./images/logo512.png","/manifest.json"])
+            return cache.addAll(["./","./images/logo192.png","./images/logo512.png","/manifest.json","./src/index.html","./src/index.css","./src/index.js"])
         })
     );
 });
