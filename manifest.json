@@ -1,7 +1,7 @@
 {
     "name": "To-do app",
     "short_name": "To-do app",
-    "start_url":"./home.html",
+    "start_url":".",
     "background_color": "#ffffff",
     "theme_color": "#ffffff",
     "display": "standalone",

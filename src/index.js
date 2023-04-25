@@ -1,3 +1,14 @@
+if("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("sw.js").then(registration => {
+    console.log('service worker registered');
+    console.log(registration);
+  }).catch(error => {
+    console.log('service worker not registered');
+    console.log(error);
+  });       
+}
+
+
 // Your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyCzIXsEUSqFitrKzIhUe9po2_9HeqvZAd0",

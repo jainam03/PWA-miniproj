@@ -1,5 +1,5 @@
 self.addEventListener("install",e => {
-    // console.log("Installed successfully");
+    console.log("Installed successfully");
     e.waitUntil(
         caches.open("static").then(cache => {
             return cache.addAll(["./","./images/logo192.png","./images/logo512.png","/manifest.json","./src/index.html","./src/index.css","./src/index.js"])
@@ -12,6 +12,6 @@ self.addEventListener("fetch", e => {
     e.respondWith(
         caches.match(e.request).then(response => {
             return response || fetch(e.request);
-        })
+        })  
     )
 });
